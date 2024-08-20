@@ -25,7 +25,7 @@ public class Main {
 
 
         }
-    return "";
+    throw new RuntimeException("String with only zeros or other non digits found");
     }
 
     private static boolean isPalindrome(String word) {

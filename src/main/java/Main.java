@@ -11,7 +11,14 @@ public class Main {
 
         System.out.println(reverse("hejsan"));
 
+        boolean palin = isPalindrome("racecar");
+        System.out.println(palin);
     }
+
+    private static boolean isPalindrome(String word) {
+        return wordCompareIgnoreCase(word, reverse(word));
+    }
+
     public static int letterCounter(String word) {
         int count = 0;
 

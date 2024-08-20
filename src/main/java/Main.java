@@ -7,6 +7,10 @@ public class Main {
         String s = "Hejaaaaaaaaaaa";
         System.out.println(letterCounter(s));
 
+        System.out.println(wordCompareIgnoreCase("aA", "Aa"));
+
+        System.out.println(reverse("hejsan"));
+
     }
     public static int letterCounter(String word) {
         int count = 0;
@@ -20,6 +24,14 @@ public class Main {
         return count;
     }
 
+    public static boolean wordCompareIgnoreCase(String word1, String word2) {
+       return word1.equalsIgnoreCase(word2);
+
+    }
+
+    public static String reverse(String word) {
+        return new StringBuilder(word).reverse().toString();
+    }
 }
 
 

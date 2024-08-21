@@ -50,6 +50,7 @@ public class Main {
     }
 
     public static String reverse(String word) {
+
         return new StringBuilder(word).reverse().toString();
     }
 }
